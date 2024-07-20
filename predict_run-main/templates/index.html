@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fantasy Cricket</title>
+
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="stats.png">
+            </div>
+            <li><a href="#web">IPL Total Run in Session</a></li>
+            <li><a href="#web">Run in Individual Match</a></li>
+        </ul>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="Form">
+                    Predict Run
+                </h1>
+                <form action="/predict_run" method="POST">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="PLAYER">Player Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="PLAYER" name="PLAYER" placeholder="Player name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Avg">Avg</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Avg" name="Avg" placeholder="Enter Player Average..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="BF">BF</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="BF" name="BF" placeholder="How many balls faced..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="SR">SR</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="SR" name="SR" placeholder="Enter Player Strike Rate..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Fours">Fours</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Fours" name="Fours" placeholder="How many 4 hits..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Six">Six</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Six" name="Six" placeholder="How many 4 hits..">
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="thumbnail">
+        <img src="cric.jpg" alt="ipl image">
+    </div>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</body>
+
+</html>
